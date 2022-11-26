@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addData">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD EVENTS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/et_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/custom_input"
+    android:drawablePadding="12dp"
+    android:hint="Title..."
+    android:inputType="text"
+    android:paddingLeft="12dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_events"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:hint="Events and what to do"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:layout_below="@id/et_title"/>
+    <Button
+        android:id="@+id/bt_tanggal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_color_corner"
+        android:text="Date"
+        android:textSize="14sp"
+        android:paddingHorizontal="40dp"
+        android:layout_below="@id/et_events"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="-"
+        android:layout_below="@id/bt_tanggal"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_margin="20dp"
+        android:id="@+id/tv_tanggal"
+        />
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_color_corner"
+        android:text="Add"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="35dp"
+        android:layout_below="@id/tv_tanggal"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_check"
+        android:drawablePadding="4dp"
+        />
+
+</RelativeLayout>

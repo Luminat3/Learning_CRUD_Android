@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/topBotMargin"
+    android:layout_marginBottom="@dimen/topBotMargin"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:cardCornerRadius="@dimen/topBotMargin"
+    android:elevation="10dp"
+    app:cardBackgroundColor="@color/purple_200"
+    android:id="@+id/cardView"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/horizontalMargin"
+        android:paddingVertical="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tampil Title"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:id="@+id/tv_title"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/topBotMargin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tampil event"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:id="@+id/tv_event"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/topBotMargin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tampil Tanggal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="monospace"
+            android:id="@+id/tv_due"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
