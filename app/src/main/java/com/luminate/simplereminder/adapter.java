@@ -39,7 +39,7 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
         final model data = modelList.get(position);
         holder.tv_title.setText("Title : " + data.getTitle());
         holder.tv_event.setText("Event : " + data.getEvent());
-        holder.tv_date.setText("Date : " + data.getDate());
+//        holder.tv_date.setText("Date : " + data.getDate());
     }
 
     @Override

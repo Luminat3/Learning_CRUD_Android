@@ -63,19 +63,11 @@ public class addData extends AppCompatActivity {
                 else
                 {
                     db.child("Event").push().setValue(new model(getTitle, getEvent, getDate))
-                            .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                    Toast.makeText(addData.this, "The Data has been added!", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(addData.this, MainActivity.class));
-                                    finish();
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Toast.makeText(addData.this, "The Data has not been added due to an error!", Toast.LENGTH_SHORT).show();
-                                }
-                            });
+                            .addOnSuccessListener(aVoid -> {
+                                Toast.makeText(addData.this, "The Data has been added!", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(addData.this, MainActivity.class));
+                                finish();
+                            }).addOnFailureListener(e -> Toast.makeText(addData.this, "The Data has not been added due to an error!", Toast.LENGTH_SHORT).show());
                 }
             }
         });
